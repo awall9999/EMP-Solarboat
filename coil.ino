@@ -130,6 +130,20 @@ else if (digitalRead(down) == 0) {
                            display();
                            delay(300);                       
 }
+
+else if (digitalRead(ButtonD4) == 0) {
+                           Counter = Counter +500;
+                           if (Counter < 0) {Counter=0;} 
+                           display();
+                           delay(300);                       
+}
+else if (digitalRead(ButtonD5) == 0) {
+                           Counter = Counter +1000;
+                           if (Counter < 0) {Counter=0;} 
+                           display();
+                           delay(300);                       
+}
+
 else if (digitalRead(ok) == 0) {
                            Turns = Counter;
                            a=millis();
